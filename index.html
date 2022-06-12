@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <!-- Header: fila de logo + nav  --> 
+        <header>
+            <picture>
+                <a  href="index.html"><img class="logo" src="./imgs/logobitbyte.png"></a>	
+            </picture>
+            <section class="menuarriba">
+                <!-- <nav>     ** Menu superior... por ahora no va
+                    ** vemos despues **
+                    <ul class="users">
+                        <li class="users__item">Usuarios</li>
+                        <li class="users__item">Comercios</li>
+                        <li class="users__item">Admin</li>
+                    </ul>
+                </nav> -->
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="pages/como.html">Como?</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a href="pages/catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="pages/comercios.html">Comercios</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./pages/canjear.html">Canjear</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <!-- Fin header-->
+
+        <main class="container">
+            <section class="comohacer">
+                <article class="pasos">
+                    <h2 class="pasos__titulo">Comprás</h2>
+                    <h3 class="pasos__subtitulo">en tus comercios preferidos</h2>
+                    <img src="./imgs/compras.png" alt="Comprás" class="pasos_img">
+                </article>
+                <article class="pasos">
+                    <h2 class="pasos__titulo">Acumulás</h2>    
+                    <h3 class="pasos__subtitulo">monedas en tu alcancía</h2>                
+                    <img src="./imgs/alcancia.png" alt="" class="pasos_img">
+                </article>
+                <article class="pasos">
+                    <h2 class="pasos__titulo">Canjeás</h2>    
+                    <h3 class="pasos__subtitulo">tus monedas por premios</h2>                
+                    <img src="./imgs/premios.png" alt="" class="pasos_img"></article>
+            </section>
+            <!--Destacados del catalogo-->
+            <h2 id="offers__tit">Productos especiales para canjear HOY</h2>
+            <section class="offers">
+
+                <article class="offers__product" id="offer0"><h3>Bombom Escoces Bahía</h3>
+                    <img src="./imgs/helado.png" alt="">
+                    <div class="precio">P$ 450.-</div>
+                </article>
+                <article class="offers__product" id="offer1"><h3>nombre producto</h3>
+                    <img src="./imgs/producto.png" alt="">
+                    <div class="precio">P$ 200.-</div>
+                </article>
+                <article class="offers__product" id="offer2"><h3>nombre producto</h3>
+                    <img src="./imgs/producto.png" alt="">
+                    <div class="precio">P$ 200.-</div>
+                </article>
+                <article class="offers__product" id="offer3">
+                    <img src="./imgs/logobitbyte.png" alt="">
+                    <div class="offers__product__info">
+                    <h3>nombre producto</h3>
+                    <div class="precio">P$ 200.-</div>
+                    </div>
+                </article>
+                <!-- <article class="destacados__product" id="destaque4"><h3>nombre producto</h3>
+                    <img src="./imgs/producto.png" alt=""> 
+                    <div class="precio">P$ 200.-</div>
+                </article>-->
+            </section>  
+
+
+        </main>
+
+        
+
+        <footer>
+            Creditos
+            <a href='https://www.freepik.es/vectores/comercio-online'>Vector de comercio online creado por jcomp - www.freepik.es</a>
+
+        </footer>
+    </div>
+</body>
+</html>
