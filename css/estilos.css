@@ -16,7 +16,7 @@ body {
     width: 100%;
     margin: 0 auto;
     color: var(--maincolor);
-    font-family:;
+    font-family: 'Roboto', sans-serif;
 }
 
 #contenedor {    background-color: #EEF5DB; 
@@ -82,8 +82,11 @@ img {width: 100%;}
         flex-grow: 1;
         flex-shrink: 1;
         min-width: 250px;
+        transition: transform .7s;
         /*flex: 1 1 200px;  Respecto a contenedor padre  */ 
         }
+
+.pasos:hover {transform: scale(1.1, 1.1)}
 
 .pasos__titulo {color: #333745; font-size: 24px;
     font-family: 'Libre Baskerville', serif;
@@ -112,7 +115,13 @@ img {width: 100%;}
     align-items: center;
     padding: 10px 15px;
     margin: 5px 0;
-   text-align: center;}
+    text-align: center;
+    background-image: linear-gradient(to bottom, yellow, red, yellow);
+    transition: border 3s;}
+
+#offers__tit:hover {
+    border: 3px #E63462;
+}
 
 .offers__product {
     display: flex;
