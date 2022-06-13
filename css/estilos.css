@@ -111,17 +111,23 @@ img {width: 100%;}
 }
 
 #offers__tit {border: 2px solid #333745;
+    font-size: 40;
     box-sizing: border-box;
     align-items: center;
     padding: 10px 15px;
     margin: 5px 0;
     text-align: center;
     background-image: linear-gradient(to bottom, yellow, red, yellow);
-    transition: border 3s;}
-
-#offers__tit:hover {
-    border: 3px #E63462;
+    animation-name: shrink-me;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    animation-delay: 3s;
+    /* transition: border 3s; */
 }
+
+/* #offers__tit:hover {
+    border: 3px #E63462;
+} */
 
 .offers__product {
     display: flex;
@@ -210,4 +216,10 @@ footer {margin-top: 1rem;
     padding-top: 1rem;
     border-top: solid 2px;
     border-color: var(--secondcolor);
+}
+
+@keyframes shrink-me {
+    0%   {margin: 0 1rem; font-size: 28;}
+    50%  {margin: 0 8rem; font-size: 14;}
+    100% {margin: 0 1rem; font-size: 28;}
 }
