@@ -1,0 +1,65 @@
+.nav-item {font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #0093ff;color: white;}
+
+.menu__item a {color:white; text-decoration: none;}
+
+#offers__tit {border: 2px solid #333745;
+    font-size: 40;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 5px 0;
+    text-align: center;
+    background-image: linear-gradient(to bottom, yellow, red, yellow);
+    animation-name: shrink-me;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    animation-delay: 3s;
+    /* transition: border 3s; */
+}
+
+#tarjetas {display: flex;
+    flex-direction: row;
+    gap: 1rem}
+
+#tarjetas .card {
+        gap: 0.2rem;
+        background-color: #C7EFCF;
+        flex-basis: 25%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        min-width: 250px;
+        transition: transform .7s;
+        /*flex: 1 1 200px;  Respecto a contenedor padre  */ 
+        }
+  
+
+#tarjetas .card:hover {transform: scale(1.1, 1.1)}        
+
+.pasos__titulo {color: #333745; font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+    margin: 5px}
+    
+.pasos__subtitulo {color: #E63462; font-size: 20px;
+        font-family: 'Libre Baskerville', serif;
+        margin: 5px}
+
+#offers .card {
+    padding: 5px;
+    margin: 5px;
+    max-width: 30%;
+    flex: 1 1 clamp(300px, 30%, 400px);
+
+}
+
+.precio {
+    text-align: end;
+}
+
+@keyframes shrink-me {
+    0%   {margin: 0 1rem; font-size: 28;}
+    50%  {margin: 0 8rem; font-size: 14;}
+    100% {margin: 0 1rem; font-size: 28;}
+}
