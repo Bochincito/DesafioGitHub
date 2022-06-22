@@ -1,5 +1,10 @@
+
+h1 {
+    color:#E63462;
+    margin: 1rem 0px;}
+
 .nav-item {font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px 20px;
+    padding: 6px 20px;
     margin-left: 10px;
     background-color: #0093ff;color: white;}
 
@@ -51,11 +56,49 @@
     margin: 5px;
     max-width: 30%;
     flex: 1 1 clamp(300px, 30%, 400px);
-
 }
 
 .precio {
     text-align: end;
+}
+
+/* -- Pagina Como */
+.callout-info {
+        padding: 20px;
+        margin: 20px 20px ;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+        border-left-color: #5bc0de
+}
+
+.callout-info h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #5bc0de;
+  }
+
+/* -- Pagina Comercios */
+.comercios .card {
+    gap: 0.2rem;
+    flex-basis: 30%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 250px;
+    max-width:33%;
+}
+
+.logo_comercio {
+    margin: 1rem;
+    width: 60%;
+    align-self: center;
+}
+
+.nombre_ciudad { 
+    border: 1px solid;
+    border-color: green;
+    background-color: #C7EFCF;
+    padding-left: 1rem;
 }
 
 @keyframes shrink-me {

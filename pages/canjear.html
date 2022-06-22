@@ -7,46 +7,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../css/estilosmp.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <!-- Menu Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-info">
+            <div class="container-fluid">
+                <!-- Logo de la marca-->
+                <a class="navbar-brand" href="../index.html"><img class="img-fluid" src="../imgs/multipremios.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link "  href="como.html">Como</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comercios.html">Comercios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="canjear.html">Canjear</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> 
     <div id="contenedor">
-        <!-- Header: fila de logo + nav --> 
-        <header>
-            <picture>
-                <a  href="../index.html"><img class="logo" src="../imgs/logobitbyte.png"></a>	
-            </picture>
-            <section class="menuarriba">
-                <!-- <nav>     ** Menu superior.. por ahora no va
-                    <ul class="users">
-                        <li class="users__item">Usuarios</li>
-                        <li class="users__item">Comercios</li>
-                        <li class="users__item">Admin</li>
-                    </ul>
-                </nav> -->
-                <nav>
-                    <ul class="menu">
-                        <li class="menu__item">
-                            <a href="../pages/como.html">Como?</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="../pages/catalogo.html">Catálogo</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="../pages/comercios.html">Comercios</a>
-                        </li>                        
-                        <li class="menu__item">
-                            <a href="../pages/canjear.html">Canjear</a>
-                        </li>
-
-                    </ul>
-                </nav>
-            </section>
-        </header>
-        <!-- Fin header-->
-
-
         <main>
             <h1>Aqui como CANJEAR... pronto</h1>
 
@@ -58,5 +52,6 @@
 
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
